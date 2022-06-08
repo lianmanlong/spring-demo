@@ -8,6 +8,9 @@ import java.util.Map;
 public class DefaultListableBeanFactory extends AbstractAutowireCapableBeanFactory implements BeanDefinitionRegistry{
 
     private Map<String, BeanDefiniton> beanDefinitonMap = new HashMap<String, BeanDefiniton>();
+
+
+
     @Override
     public BeanDefiniton getBeanDefinition(String beanName) {
         BeanDefiniton beanDefiniton = beanDefinitonMap.get(beanName);
